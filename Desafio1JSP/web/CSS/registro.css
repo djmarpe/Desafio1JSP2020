@@ -1,0 +1,143 @@
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+.boton {width: 100%;}
+.mbt1 {margin-top: 25%;}
+.mbt2 {margin-top: 10px;}
+
+[class*="col-"] {
+    float: left;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: aquamarine;
+    border-radius: 30px 30px 0px 0px;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px 0px 0px;
+}
+
+header div.col-8{
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    top: 50%;;
+    bottom: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+aside{
+    background-color: brown;
+    height:70vh;
+}
+
+aside ul{
+    list-style-type: none;
+    margin-top: 100%;
+    margin-bottom: 50%;
+}
+
+aside li{
+    margin-top: 50%;
+}
+
+aside a{
+    color: white;
+    font-weight: bold;
+}
+
+input:valid{
+    background-color: green;
+
+}
+input:invalid{
+    background-color: red;
+}
+
+input:required:valid{
+    background-color: green;
+
+}
+
+input[type=email]{
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #333;
+  margin: 0;
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+.error {
+  width : 100%;
+  padding: 0;
+
+  font-size: 70%;
+  color: white;
+  background-color: #900;
+  border-radius:5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 2px;
+}
+
+.noerror {
+  width : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #090;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+section{
+    height: 70vh;
+    background-color: blueviolet;
+    overflow: scroll;
+}
+
+footer{
+    background-color: red;
+    border-radius: 0px 0px 30px 30px;
+}
+
+footer table{
+    text-align: center;
+    margin-left: 20%;
+}
